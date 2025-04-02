@@ -1,0 +1,28 @@
+.threeD{
+    width: 100%;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight:lighter ;
+    user-select: none;
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100%;
+}
+.text p{
+    margin-left: 5vw;
+    width: 100%;
+    padding: auto;
+    color: var(--gray-color);
+}
+
+@media(max-width: 940px){
+    .threeD{
+        width: auto;
+        height: 100vh;
+    }
+}

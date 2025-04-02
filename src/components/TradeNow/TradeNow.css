@@ -1,0 +1,65 @@
+.trade-now-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top:50%;
+    transform: translate(0%, -50%);
+    right: 40px;
+    padding: 24px;
+    background: #34343478;
+    border-radius: 20px;
+    gap: 16px;
+    max-width: 380px;
+}
+.trade-now-text{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    user-select: none;
+}
+.trade-now-text h1{
+    color: var(--accent-color);
+    font-size: 32px;
+}
+.trade-now-btn button{
+    background-color: var(--accent-color);
+    color: var(--black-color);
+    font-size: 24px;
+    font-weight: 600;
+    padding: 11px 80px;
+    border-radius: 17px;
+    cursor: pointer;
+}
+
+@media(max-width: 940px){
+    .trade-now-text h3, h2{
+        display: none;
+    }
+    .trade-now-container{
+        bottom:10%;
+        right: 50%;
+        transform: translate(50%, 0%);
+    }
+}
+
+@media(max-width: 740px){
+    .trade-now-container{
+        background: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        padding: 0;
+        width: 100%;
+        top: 12%;
+    }
+    .trade-now-text p, h1{
+        display: none;
+    }
+    .trade-now-container button{
+        scale: 0.8;
+    }
+}
