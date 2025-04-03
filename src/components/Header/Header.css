@@ -1,4 +1,4 @@
-.header{
+.header {
     height: 110px;
     width: 100%;
     background: transparent;
@@ -7,33 +7,39 @@
     align-items: center;
     margin: 0px;
 }
-.logo{
+
+.logo {
     margin-left: 40px;
     position: absolute;
     left: 0;
     cursor: pointer;
 }
-.logo img{
+
+.logo img {
     max-width: 110px;
 }
-.header .nav ul{
+
+.header .nav {
     display: flex;
     gap: 12px;
     cursor: pointer;
 }
-.header .nav ul li{
+
+.header .nav ul {
+    display: flex;
+}
+
+.header-nav-text {
     padding: 6px 32px;
     transition: 1s;
 }
-.header .nav ul li:hover{
+
+.header-nav-text:hover {
     color: var(--secondary-color);
 }
-.header .nav ul li.selected{
-    color: var(--accent-color);
-    font-weight: 600;
-}
 
-.profile{
+
+.profile {
     position: absolute;
     right: 0;
     margin-right: 40px;
@@ -42,7 +48,8 @@
     align-items: center;
     gap: 12px;
 }
-.notification{
+
+.notification {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,7 +59,8 @@
     border-radius: 100px;
     cursor: pointer;
 }
-.profile-detail{
+
+.profile-detail {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,27 +70,47 @@
     border-radius: 40px;
     cursor: pointer;
 }
-.profile-detail .profilepic{
+
+.profile-detail .profilepic {
     max-height: 40px;
 }
 
-@media(max-width: 1340px){
-    .header .nav ul{
+#menu {
+    display: none;
+}
+
+@media(max-width: 1340px) {
+    #menu {
+        display: flex;
+    }
+    .header .nav {
+        display: none; 
+    }
+    .nav.open{
+        display: flex; 
+        flex-direction: column; 
+        position: absolute; 
+        top: 110px; 
+        right: 0;
+        background: #343434cd;
+        border-radius: 20px; 
+        z-index: 1000; 
+    }
+    .nav.open ul{
         display: flex;
         flex-direction: column;
-        position: absolute;
-        left: 40px;
-        top: 180px;
+        gap: 24px;
+        padding: 10px 4px;
+        text-align: center;
+        
     }
 }
 
-@media(max-width: 940px){
-    .header .nav ul{
-        left: 8px;
+@media(max-width: 940px) {
+    #notif {
+        display: none;
     }
-    .header .nav ul li{
-        text-align: center;
-        background: #343434cf;
-        border-radius: 20px;
+    .profile-detail p {
+        display: none;
     }
 }

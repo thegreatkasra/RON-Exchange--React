@@ -1,44 +1,51 @@
 import React, { useState } from 'react';
 import './Header.css';
+import { Link } from 'react-router-dom';
 
 import logo from './Svg/logo.png';
 import bell from './Svg/bell.svg';
 import profilePic from './Svg/profilePic.png';
 import arrowDown from './svg/arrowDown.svg';
+import menu from './Svg/menu.png';
 
 const Header = () => {
-  
-  const [selected, setSelected] = useState(null);
 
-  const handleSelect = (item) => {
-    setSelected(item);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
     <div className='header'>
       <div className="logo">
-        <img src={logo} alt="Logo"/>
+        <img src={logo} alt="Logo" />
       </div>
 
-      <div className="nav">
+      <div className={`nav ${isMenuOpen ? 'open' : ''}`}>
         <ul>
-          <li className={selected === 'Home' ? 'selected' : ''} onClick={() => handleSelect('Home')}>Home</li>
-          <li className={selected === 'Market' ? 'selected' : ''} onClick={() => handleSelect('Market')}>Market</li>
-          <li className={selected === 'Earn' ? 'selected' : ''} onClick={() => handleSelect('Earn')}>Earn</li>
-          <li className={selected === 'Portfolio' ? 'selected' : ''} onClick={() => handleSelect('Portfolio')}>Portfolio</li>
-          <li className={selected === 'Wallet' ? 'selected' : ''} onClick={() => handleSelect('Wallet')}>Wallet</li>
-          <li className={selected === 'Transfer' ? 'selected' : ''} onClick={() => handleSelect('Transfer')}>Transfer</li>
+          <li><Link to="/" className='header-nav-text'>Home</Link></li>
+          <li><Link to="/market" className='header-nav-text'>Market</Link></li>
+          <li><Link to="/earn" className='header-nav-text'>Earn</Link></li>
+          <li><Link to="/portfolio" className='header-nav-text'>Portfolio</Link></li>
+          <li><Link to="/wallet" className='header-nav-text'>Wallet</Link></li>
+          <li><Link to="/transfer" className='header-nav-text'>Transfer</Link></li>
         </ul>
       </div>
 
       <div className="profile">
-        <div className='notification'>
+        <div className='notification' id='notif'>
           <img src={bell} alt="notification" />
         </div>
-        <div className='profile-detail'>
-          <img className='profilepic' src={profilePic} alt="profile" />
-          <p>Ana Williams</p>
-          <img className='arrow' src={arrowDown} alt="arrow" />
+        <div>
+          <Link to="/signin" className='profile-detail'>
+            <img className='profilepic' src={profilePic} alt="profile" />
+            <p>Ana Williams</p>
+            <img className='arrow' src={arrowDown} alt="arrow" />
+          </Link>
+        </div>
+        <div className='notification' id='menu' onClick={toggleMenu}>
+          <img src={menu} alt="menu" />
         </div>
       </div>
     </div>
