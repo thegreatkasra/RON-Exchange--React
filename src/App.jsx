@@ -2,7 +2,7 @@ import React from 'react'
 import './App.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import Home from './components/Home/home'
+import Home from './components/Home/Home'
 import Market from './components/Market/Market'
 import Earn from './components/Earn/Earn';
 import Portfolio from './components/Portfolio/Portfolio'
