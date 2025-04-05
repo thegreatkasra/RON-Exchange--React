@@ -1,0 +1,53 @@
+.btc-overview-all{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid var(--darkgray-color) 1px;
+    border-radius: 20px ;
+    padding: 24px 32px;
+    gap: 24px;
+}
+.btc-overview-all .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btc-overview-select{
+    padding: 8px 12px;
+    border: solid var(--darkgray-color) 1px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    /* drop down */
+    appearance: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+}
+.btc-overview-select select{
+    cursor: pointer;
+}
+.btc-overview-select :focus{
+    border: none;
+    outline: none;
+}
+
+.btc-overview-option{
+    font-size: 14px;
+}
+.btc-overview-indicator{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+}
+.btc-overview-indicator .dash{
+    border-top: 2px dashed #333;
+    width: 85%;
+}
+.btc-overview-indicator p{
+    width: 15%;
+    color: var(--gray-color);
+}

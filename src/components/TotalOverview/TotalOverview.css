@@ -1,0 +1,24 @@
+.total-all{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: solid var(--darkgray-color) 1px;
+    border-radius: 20px ;
+    padding: 24px 32px;
+    gap: 24px;
+}
+.title{
+    width: 100%;
+}
+.title h2{
+    font-size: 24px;
+}
+.total-cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;    
+}

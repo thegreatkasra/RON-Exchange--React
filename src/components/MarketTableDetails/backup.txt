@@ -1,0 +1,66 @@
+import React from "react";
+import './MarketTableDetails.css'
+
+const cryptoData = [
+  { id: 1, name: "Bitcoin", symbol: "BTC", price: "$87,207", change24h: "-1,024", percentChange: "1.2%", isNegative: true },
+  { id: 2, name: "Ethereum", symbol: "ETH", price: "$2,064.68", change24h: "+151", percentChange: "0.20%", isNegative: false },
+  { id: 3, name: "Tether", symbol: "USDT", price: "$1.00", change24h: "$0", percentChange: "0.00%", isNegative: false },
+  { id: 4, name: "XRP", symbol: "XRP", price: "$2.45", change24h: "+0.15", percentChange: "1.15%", isNegative: false },
+  { id: 5, name: "BNB", symbol: "BNB", price: "$632.76", change24h: "-20.12", percentChange: "1.54%", isNegative: true },
+  { id: 6, name: "Solana", symbol: "SOL", price: "$144.44", change24h: "+5.25", percentChange: "3.34%", isNegative: false },
+  { id: 7, name: "Dogecoin", symbol: "DOGE", price: "$0.1997", change24h: "+0.01", percentChange: "8.55%", isNegative: false },
+  { id: 8, name: "Cardano", symbol: "ADA", price: "$0.7655", change24h: "+0.02", percentChange: "3.85%", isNegative: false },
+  { id: 9, name: "TRON", symbol: "TRX", price: "$0.2293", change24h: "+0.06", percentChange: "0.99%", isNegative: false },
+  { id: 10, name: "Chainlink", symbol: "LINK", price: "$15.91", change24h: "-1.89", percentChange: "3.90%", isNegative: true },
+  { id: 11, name: "Avalanche", symbol: "AVAX", price: "$22.80", change24h: "-3.10", percentChange: "1.2%", isNegative: true },
+  { id: 12, name: "Stellar", symbol: "XLM", price: "$0.2986", change24h: "+0.04", percentChange: "2.58%", isNegative: false },
+  { id: 13, name: "Toncoin", symbol: "TON", price: "$3.62", change24h: "-0.31", percentChange: "1.79%", isNegative: true },
+];
+
+const CryptoTable = () => {
+
+  return (
+    <div className="table-full">
+      <hr className="line"/>
+      <table className="table">
+        <thead>
+          
+          <tr className="table-details">
+            
+            <th>#</th>
+            <th>Crypto</th>
+            <th>Price</th>
+            <th>24h Change</th>
+            <th>% Change</th>
+            <th>Details</th>
+            
+          </tr>
+          
+        </thead>
+        
+        <tbody>
+          
+          {cryptoData.map((crypto) => (
+            <tr key={crypto.id} className="table-row">
+              <td>{crypto.id}</td>
+              <td>
+                <span className="crypto-name">{crypto.name}</span> <span className="crypto-name-abb">{crypto.symbol}</span>
+              </td>
+              <td>{crypto.price}</td>
+              <td className={crypto.isNegative ? "change-negative" : "change-positive"}>{crypto.change24h}</td>
+              <td className={crypto.isNegative ? "change-negative" : "change-positive"}>{crypto.percentChange}</td>
+              <td>
+                <button className="crypto-detail">Detail</button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <div className="crypto-view-more">
+        <button className="view-more-btn">View More</button>
+      </div>
+    </div>
+  );
+}
+
+export default CryptoTable;

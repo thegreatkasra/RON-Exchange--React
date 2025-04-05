@@ -1,0 +1,47 @@
+.wallet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: solid var(--darkgray-color) 1px;
+    border-radius: 20px ;
+    padding: 24px 32px;
+    gap: 24px;
+}
+.wallet .top{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.wallet .top h2{
+    font-size: 24px;
+}
+.wallet .top p{
+    color: var(--gray-color);
+}
+.wallet .down{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.wallet .down .details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.wallet .down .details .cash{
+    font-size: 32px;
+    font-weight: bold;
+}
+.wallet .down .details .percent{
+    font-size: 20px;
+    padding: 2px 14px;
+    color: var(--secondary-color);
+    border: solid 2px var(--secondary-color);
+    border-radius: 20px;
+}
+.wallet .down .dec p{
+    color: var(--gray-color);
+}

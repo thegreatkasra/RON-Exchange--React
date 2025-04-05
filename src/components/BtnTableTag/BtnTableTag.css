@@ -1,0 +1,43 @@
+.marketCatBtn{
+    background: transparent;
+    font-size: 16px;
+    padding: 8px 32px;
+    border: solid 1px var(--gray-color);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.6s;
+    max-height: 36px;
+}
+.marketCatBtn:hover{
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color)
+}
+.marketCatBtn img{
+    max-height: 16px;
+}
+.market-btn-detail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media (max-width: 1200px){
+    .marketCatBtn{
+        font-size: 14px;
+        width: auto;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+}
+
+@media (max-width: 768px){
+    .marketCatBtn{
+        font-size: 12px;
+        width: auto;
+        padding: 4px 42px;
+    }
+
+}

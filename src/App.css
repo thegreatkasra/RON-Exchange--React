@@ -4,7 +4,6 @@
     border: 0;
     list-style: none;
     text-decoration: none;
-    overflow: hidden;
     box-sizing: border-box;
     color: var(--white-color);
 }

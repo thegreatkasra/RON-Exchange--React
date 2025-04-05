@@ -1,0 +1,96 @@
+.btc-bar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.bar-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 3.3vw;
+    height: 235px;
+    border-radius: 40px;
+    background: var(--darkgray-color);
+    gap: 8px;
+}
+.bar-box p{
+    color: var(--gray-color);
+}
+#bar1{
+    width: 100%;
+    background: var(--accent-color);
+    height: 73%;
+    border-radius: 40px;
+    animation: fade 2s ease-in-out 0.5s 1 normal forwards;
+
+}
+#bar2{
+    width: 100%;
+    background: var(--accent-color);
+    height: 81%;
+    border-radius: 40px;
+    animation: fade 2s ease-in-out 0.5s 1 normal forwards;
+}
+#bar3{
+    width: 100%;
+    background: var(--accent-color);
+    height: 30%;
+    border-radius: 40px;
+    animation: fade 2s ease-in-out 0.5s 1 normal forwards;
+}
+#bar4{
+    width: 100%;
+    background: var(--accent-color);
+    height: 21%;
+    border-radius: 40px;
+    animation: fade 2s ease-in-out 0.5s 1 normal forwards;
+}
+#bar5{
+    width: 100%;
+    background: var(--accent-color);
+    height: 49%;
+    border-radius: 40px;
+    animation: fade 2s ease-in-out 0.5s 1 normal forwards;
+}
+#bar6{
+    width: 100%;
+    background: var(--accent-color);
+    height: 50%;
+    border-radius: 40px;
+    animation: fade 2s ease-in-out 0.5s 1 normal forwards;
+}
+
+/* animation */
+@keyframes fade {
+    from { height: 0%;  }
+  }
+
+  @media (max-width: 1200px){
+    .bar-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        width: px;
+        height: 235px;
+        border-radius: 40px;
+        background: var(--darkgray-color);
+        gap: 8px;
+    }
+}
+@media (max-width: 768px){
+    .bar-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        width: 40px;
+        height: 235px;
+        border-radius: 40px;
+        background: var(--darkgray-color);
+        gap: 8px;
+    }
+}

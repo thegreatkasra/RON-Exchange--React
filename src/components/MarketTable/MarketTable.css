@@ -1,0 +1,80 @@
+.MarketTable-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid var(--darkgray-color) 1px;
+    border-radius: 20px ;
+    padding: 24px 32px;
+    width: 100%;
+}
+.MarketTable-container .top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.MarketTable-container .top .title h2{
+    font-weight: bold;
+}
+.MarketTable-container .top .search{
+    border: 1px solid var(--gray-color);
+    padding: 4px 16px;
+    border-radius: 15px;
+}
+.MarketTable-container .top .search input:focus{
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+.MarketTable-container .top .search input::placeholder{
+    font-size: 16px;
+}
+.MarketTable-container .middle{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    margin-top: 16px;
+}
+.market-table-details{
+    width: 100%;
+    margin-top: 16px;
+}
+@media (max-width: 1200px){
+    .MarketTable-container{
+        padding: 12px;
+
+    }
+    .MarketTable-container .top{
+        flex-direction: column;
+        gap: 12px;
+        justify-content: center;
+    }
+    .MarketTable-container .top .search{
+        width: 100%;
+        order: 2;
+    }
+    .MarketTable-container .title{
+        order: 1;
+    }
+}
+@media (max-width: 768px){
+    .MarketTable-container .middle{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 16px;
+    }
+    .MarketTable-container .top .title {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 24px;
+        margin: 12px;
+    }
+}
