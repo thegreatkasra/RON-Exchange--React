@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import logo from './Svg/logo.png';
 import bell from './Svg/bell.svg';
 import profilePic from './Svg/profilePic.png';
-import arrowDown from './svg/arrowDown.svg';
+import arrow from './svg/arrow.svg';
 import menu from './Svg/menu.png';
 
 const Header = () => {
@@ -41,7 +41,7 @@ const Header = () => {
           <Link to="/signin" className='profile-detail'>
             <img className='profilepic' src={profilePic} alt="profile" />
             <p>Ana Williams</p>
-            <img className='arrow' src={arrowDown} alt="arrow" />
+            <img className='arrow' src={arrow} alt="arrow" />
           </Link>
         </div>
         <div className='notification' id='menu' onClick={toggleMenu}>
