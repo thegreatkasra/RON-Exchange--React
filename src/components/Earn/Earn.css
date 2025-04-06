@@ -1,0 +1,43 @@
+.earn-page{
+    background: var(--black-color);
+    overflow-x: hidden;
+}
+.earn-all{
+    width: 100%;
+    display: flex;
+    gap: 24px;
+}
+.earn-left{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 70%;
+    margin-left: 40px;
+}
+.earn-right{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 24px;
+    margin-right: 40px;
+}
+
+@media(max-width:1200px){
+    .earn-all{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8x;
+    }
+    .earn-left{
+        gap: 8px;
+        width: 95%;
+        margin-left: 0px;
+    }
+    .earn-right{
+        width: 95%;
+        gap: 8px;
+        margin: 0px;
+    }
+}

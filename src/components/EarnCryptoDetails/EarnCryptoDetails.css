@@ -1,0 +1,90 @@
+.earn-crypto-details{
+    width: 100%;
+    background: url('./img/bg.svg');
+    background-size: cover;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 32px;
+    gap: 18px;
+    user-select: none;
+}
+.earn-crypto-detail-name{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-start;
+}
+.earn-crypto-detail-name img{
+    height: 24px;
+}
+.earn-crypto-detail-name h2{
+    font-size: 24px;
+}
+.earn-crypto-details-first{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    justify-content: flex-start;
+}
+.earn-crypto-details-price{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4px;
+}
+.earn-crypto-details p{
+    font-size: 16px;
+}
+.earn-crypto-details h3{
+    font-size: 20px;
+}
+.earn-crypto-details-second{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 18px;
+}
+.earn-crypto-details-second .change{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 18px;
+    background: #3434348a;
+    border-radius: 15px;
+}
+.earn-crypto-details-third{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 18px 18px;
+    background: #3434348a;
+    border-radius: 15px;
+}
+.earn-crypto-details-third .indicator{
+    width: 100%;
+}
+.earn-crypto-details-third .indicator img{
+    max-width: 100%;
+    
+}
+.earn-crypto-details-third .indicator-price{
+    display: flex;
+    justify-content: space-between;
+}
+.indicator-price-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.indicator-price-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.indicator-description p{
+    color: #bcbcbc;
+    font-size: 12px;
+}

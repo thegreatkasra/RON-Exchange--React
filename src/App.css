@@ -6,4 +6,6 @@
     text-decoration: none;
     box-sizing: border-box;
     color: var(--white-color);
+    outline: none;
+    box-shadow: none; 
 }

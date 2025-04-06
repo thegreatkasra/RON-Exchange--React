@@ -1,0 +1,23 @@
+.earn-chart{
+    border: 1px solid var(--gray-color);
+    border-radius: 20px;
+    padding: 24px;
+   
+}
+.earn-chart .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.earn-chart-btns{
+    display: flex;
+    gap: 12px;
+    scale: 0.95;
+}
+.earn-chart-api{
+    margin-top: 16px;
+}
+h1, h2, h3, h4{
+    display: block;
+}

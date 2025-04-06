@@ -1,0 +1,54 @@
+.earn-trade{
+    border: 1px solid var(--gray-color);
+    border-radius: 20px;
+    padding: 24px;
+}
+.earn-trade .earn-trade-btn{
+    display: flex;
+    gap: 8px;
+    padding: 18px 0 ;
+}
+.earn-trade-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.earn-trade-input{
+    width: 100%;
+    border: 1px solid var(--gray-color);
+    border-radius: 15px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+}
+.earn-trade-input-first{
+    width: 100%;
+    border: 1px solid var(--gray-color);
+    border-radius: 10px;
+    padding: 8px;
+    cursor: pointer;
+}
+.earn-trade-input-first select{
+    width: 100%;
+    cursor: pointer;
+    font-size: 14px;
+}
+.earn-trade-buy-btn{
+    margin-top: 20px;
+    width: 100%;
+}
+.earn-trade-buy-btn button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    width: 100%;
+    border-radius: 15px;
+    font-size: 20px;
+    color: var(--black-color);
+    font-weight: bold;
+    background: var(--accent-color);
+    cursor: pointer;
+}

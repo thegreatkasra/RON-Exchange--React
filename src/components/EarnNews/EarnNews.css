@@ -1,0 +1,57 @@
+.earn-news{
+    border: 1px solid var(--gray-color);
+    border-radius: 20px;
+    padding: 24px;
+}
+.earn-news .title{
+    display: flex;
+    justify-content: space-between;
+}
+.earn-trade-btn{
+    display: flex;
+    gap: 8px;
+    scale: 0.9;
+}
+.earn-news-posts{
+    margin-top: 24px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.earn-news-post{
+    padding: 12px;
+    border: 1px solid var(--darkgray-color);
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    gap: 12px;
+}
+.earn-news-buy-btn{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.earn-news-buy-btn button{
+    width: 90%;
+    padding: 8px;
+    background: transparent;
+    border: 1px solid var(--darkgray-color);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 14px;
+    color: var(--gray-color);
+}
+.earn-news-buy-btn button:hover{
+    background: var(--primary-color);
+    color: var(--white-color);
+}

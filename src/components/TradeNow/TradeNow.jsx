@@ -1,5 +1,6 @@
 import React from 'react'
 import './TradeNow.css'
+import { Link } from 'react-router-dom';
 
 import arrow from './img/arrow-right.png'
 
@@ -13,7 +14,7 @@ const TradeNow = () => {
         <h2>Ready to start?</h2>
       </div>
       <div className="trade-now-btn">
-        <button>Trade Now <img src={arrow} alt="arrow" /> </button>
+        <Link to="/earn" ><button>Trade Now <img src={arrow} alt="arrow" /> </button></Link>
       </div>
     </div>
   )

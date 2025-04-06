@@ -1,0 +1,47 @@
+.earn-analytic-full{
+    border: 1px solid var(--gray-color);
+    border-radius: 20px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.earn-analytics{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 24px;
+    
+}
+.earn-analytic{
+    width: 48%;
+    background: var(--darkgray-color);
+    min-height: 130px;
+    padding: 16px;
+    border-radius: 15px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.earn-analytic .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.earn-analytic .title img{
+    cursor: pointer;
+}
+.earn-analytic-chart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    margin-top: 18px;
+}
+.earn-analytic-chart img{
+    width: 100%;
+}
