@@ -3,7 +3,7 @@ import './EarnCryptoDetails.css';
 
 import btc from './img/btc.png';
 import indicator from './img/indicator.png';
-import line from './img/line.png';
+import line from './img/Line.png';
 
 const EarnCryptoDetails = () => {
   const [data, setData] = useState(null);
