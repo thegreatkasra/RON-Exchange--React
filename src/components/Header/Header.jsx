@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import logo from './Svg/logo.png';
 import bell from './Svg/bell.svg';
 import profilePic from './Svg/profilePic.png';
-import arrow from './svg/arrow.svg';
+import arrow from './Svg/arrow.svg';
 import menu from './Svg/menu.png';
 
 const Header = () => {
